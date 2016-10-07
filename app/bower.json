@@ -1,0 +1,21 @@
+{
+  "name": "FluroBoilerplate",
+  "version": "0.0.0",
+  "appPath": "app",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-resource": "^1.3.0",
+    "angular-touch": "^1.3.0",
+    "angular-ui-router": "^0.3.1",
+    "fluro.config": "*",
+    "fluro.content": "*",
+    "font-awesome": "~4.2.0",
+    "lodash": "^4.16.4",
+    "ngstorage": "~0.3.10",
+    "fluro.asset": "*"
+  },
+  "resolutions": {
+    "angular": "^1.5.8"
+  }
+}

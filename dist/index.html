@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="fluro">
+<head>
+    <meta charset="utf-8">
+
+    <title>Fluro Application</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    
+    <meta property="fluro_url" content="<%= apipath %>">
+
+    <!-- Fluro Authentication Settings-->
+    <% if(authSettings == 'client') { %>
+        <meta property="fluro_application_key" content="<%= sessionKey %>">
+    <% } %>
+
+    <% if(authSettings == 'application') { %>
+        <meta property="fluro_application_key" content="<%= app.apikey %>">
+    <% } %>
+
+    <% if(authSettings == 'global' && cookieKey.length) { %>
+        <meta property="fluro_application_key" content="<%= cookieKey %>">
+    <% } %>
+
+    
+
+    <link rel="stylesheet" href="/css/vendor.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <base href="/">
+
+    <!-- Live Reload Script-->
+    <script src="http://localhost:3001/livereload.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Your main view (if you want it) -->
+    <div ui-view></div>
+
+
+    <script src="/js/vendor.js"></script>
+    <script src="/js/app.min.js"></script>
+
+    <script src="/js/templates.min.js"></script>
+</body>
+</html>

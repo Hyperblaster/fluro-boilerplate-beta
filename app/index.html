@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="fluro">
+<head>
+    <meta charset="utf-8">
+
+    <title>Fluro Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    
+    <meta property="fluro_url" content="https://apiv2.fluro.io">
+
+    <!-- Fluro Authentication Settings
+    <% if(authSettings == 'client') { %>
+        <meta property="fluro_application_key" content="<%= sessionKey %>">
+    <% } %>
+
+    <% if(authSettings == 'application') { %>
+        <meta property="fluro_application_key" content="<%= app.apikey %>">
+    <% } %>
+
+    <% if(authSettings == 'global' && cookieKey.length) { %>
+        <meta property="fluro_application_key" content="<%= cookieKey %>">
+    <% } %>
+    -->
+
+    
+
+    <!-- build:css /css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css /css/style.min.css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- endbuild -->
+    <base href="/">
+
+    <!-- Live Reload Script-->
+    <script src="http://localhost:9002/livereload.js"></script>
+
+</head>
+
+<body>
+
+    
+    <div ui-view></div>
+
+
+    <!-- build:js /js/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-touch/angular-touch.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/ngstorage/ngStorage.js"></script>
+    <script src="/bower_components/fluro.config/dist/fluro.config.min.js"></script>
+    <script src="/bower_components/fluro.util/dist/fluro-util.js"></script>
+    <script src="/bower_components/lodash/lodash.js"></script>
+    <script src="/bower_components/fluro.content/dist/fluro.content.min.js"></script>
+    <script src="/bower_components/fluro.asset/dist/fluro.asset.js"></script>
+    <!-- endbower -->
+    <script src="/bower_components/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.js"></script>
+    <!-- endbuild -->
+    <!-- build:js /js/app.min.js -->
+    <script src="/js/app.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js /js/templates.min.js -->
+    <script src="/js/templates.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
